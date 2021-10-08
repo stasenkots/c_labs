@@ -6,8 +6,7 @@
 #include <cmath>
 
 
-//Найти угол  в градусах (меньше 180°) между положением
-//минутной и часовой стрелок в h часов, m минут, s секунд. (h, m, s вводится пользователем).
+//Найти угол  в градусах (меньше 180°) между положением минутной и часовой стрелок в h часов, m минут, s секунд. (h, m, s вводится пользователем).
 
 
 int main() {
@@ -35,5 +34,16 @@ int main() {
         std::cout << res << std::endl;
     }
 
+    double angle_per_seconds = angle_per_minute / 60;
+
+    double angle_hour1 = angle_per_hour * h + angle_per_minute * m + angle_per_seconds * s;
+    double angle_minute1 =  angle_per_minute * m + angle_per_seconds * s;
+    double  res1 = std::abs(angle_hour - angle_minute);
+
+    if(res > 180){
+        std::cout << 360 - res1 << std::endl;
+    } else {
+        std::cout << res1 << std::endl;
+    }
 
 }

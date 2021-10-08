@@ -13,25 +13,13 @@
 
 int main() {
 
-    //int r don't do
     double r;
-
     std::cin >> r;
-    //don't use pow()
 
-    double area_side = 4 * M_PI * r * r;
-
-    double v = 4.0 / 3 * M_PI * r * r * r;
-
-    double side_outside_cube = 2 * r;
-
-    double  side_inside_cube = r * sqrt(2);
-
-    std::cout<< area_side << std::endl;
-    std::cout<< v << std::endl;
-    std::cout<< side_outside_cube << std::endl;
-    std::cout<< side_inside_cube << std::endl;
-
+    double area = 4 * M_PI * r * r;
+    double V = 4.0/3 * M_PI * r * r * r;
+    double A = 2 * r;
+    double a = r * sqrt(2)
 }
 
 
