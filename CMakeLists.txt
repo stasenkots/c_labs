@@ -3,7 +3,4 @@ project(c_labs)
 
 set(CMAKE_CXX_STANDARD 98)
 
-#add_executable(c_labs lab1/main.cpp)
-#add_executable(c_labs lab1/lecture.cpp)
-#add_executable(c_labs lab1/lecture.cpp)
-add_executable(c_labs lab1/task2.cpp)
+add_executable(c_labs lab2/task2.cpp)

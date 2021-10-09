@@ -22,6 +22,6 @@ int main() {
     double percent;
     std::cin >> sum >> period >> percent;
     percent /= 100;
-    sum += sum * period / 12 * percent;
+    sum += sum * period * percent / 12 ;
     std::cout << sum << std::endl;
 }

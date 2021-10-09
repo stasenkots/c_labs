@@ -9,7 +9,8 @@
 int main() {
     double n;
     std::cin >> n;
-    int int_part = n;
-    double frac_part = n - int_part;
+    //12.23
+    int int_part = n;//12
+    double frac_part = n - int_part;//0.23
     std::cout << int_part << std::endl << frac_part << std::endl;
 }
