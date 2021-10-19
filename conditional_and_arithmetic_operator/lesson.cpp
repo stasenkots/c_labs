@@ -6,6 +6,8 @@
 #include <cmath>
 
 
+int global = 1;
+
 int main() {
 
 //    //static cast vs C-style cast
@@ -98,6 +100,64 @@ int main() {
      if (a7 < 0 || a7 > 100);
 
 
+//     enum Colors{
+//         RED,
+//         GREEN,
+//     };
+//
+     //switch
+    int color;
+    std::cin >> color;
+    const int red = 1;
+    switch (color)
+    {
+        case 1:
+            std::cout << "Gray";
+            break;
+        case 2:
+            std::cout << "Pink";
+            break;
+        case 3:
+            std::cout << "Blue";
+            break;
+        case 4:
+            std::cout << "Purple";
+            break;
+        case 5:
+            std::cout << "Red";
+            break;
+        default:
+            std::cout << "Unknown";
+            break;
+    }
+
+
+    //block,local,global vars
+
+
+     int x = 0;
+    {
+         int x = 1;
+        x += 1;
+    }
+    std::cout << x;
+
+    for (int i = 0; i < 10; ++i) {
+        int y = 0;
+        y += 1;
+        std::cout << y;
+    }
+
+
+    if(1){
+        int global = 0;
+    }
+
+    std::cout << global;
+
 
 
 }
+
+
+
