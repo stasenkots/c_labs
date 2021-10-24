@@ -78,83 +78,83 @@ int main() {
 //    bool bread = true;
 //    bool b5 = bread || milk;
 //    std::cout << b5 << std::endl;
-
-    // if/else
-    int a7 = 0;
-    if (a7 > 10) {
-        std::cout << "a7 greater 10" << std::endl;
-    } else if (a7 < 10) {
-        std::cout << "a5 less 10" << std::endl;
-    } else {
-        std::cout << "a7 equal 10" << std::endl;
-    }
-    if(a7) {
-        std::cout << "Ok" << std::endl;
-        std::cout<<"Not Ok" <<std::endl;
-    }
-     //
-     if (a7 >= 0 && a7 < 100){
-
-     }
-
-     if (a7 < 0 || a7 > 100);
-
-
-//     enum Colors{
-//         RED,
-//         GREEN,
-//     };
 //
-     //switch
-    int color;
-    std::cin >> color;
-    const int red = 1;
-    switch (color)
-    {
-        case 1:
-            std::cout << "Gray";
-            break;
-        case 2:
-            std::cout << "Pink";
-            break;
-        case 3:
-            std::cout << "Blue";
-            break;
-        case 4:
-            std::cout << "Purple";
-            break;
-        case 5:
-            std::cout << "Red";
-            break;
-        default:
-            std::cout << "Unknown";
-            break;
-    }
+//    // if/else
+//    int a7 = 0;
+//    if (a7 > 10) {
+//        std::cout << "a7 greater 10" << std::endl;
+//    } else if (a7 < 10) {
+//        std::cout << "a5 less 10" << std::endl;
+//    } else {
+//        std::cout << "a7 equal 10" << std::endl;
+//    }
+//    if(a7) {
+//        std::cout << "Ok" << std::endl;
+//        std::cout<<"Not Ok" <<std::endl;
+//    }
+//     //
+//     if (a7 >= 0 && a7 < 100){
+//
+//     }
+//
+//     if (a7 < 0 || a7 > 100);
 
+
+     enum Colors{
+         RED,
+         GREEN,
+     };
+
+//     //switch
+//    int color;
+//    std::cin >> color;
+//    const int grey = 0;
+//    switch (color)
+//    {
+//        case x:
+//            std::cout << "Red";
+//            break;
+//        case GREEN:
+//            std::cout << "Green";
+//            break;
+//        case 3:
+//            std::cout << "Blue";
+//            break;
+//        case 4:
+//            std::cout << "Purple";
+//            break;
+//        case 5:
+//            std::cout << "Red";
+//            break;
+//        default:
+//            std::cout << "Unknown";
+//            break;
+//    }
+//
 
     //block,local,global vars
 
 
-     int x = 0;
-    {
-         int x = 1;
-        x += 1;
-    }
-    std::cout << x;
-
-    for (int i = 0; i < 10; ++i) {
-        int y = 0;
-        y += 1;
-        std::cout << y;
-    }
-
-
-    if(1){
-        int global = 0;
-    }
-
-    std::cout << global;
-
+//     int x = 0;
+//    {
+//        int x = 1;
+//        x += 1;
+//    }
+//    std::cout << x;
+////
+//    for (int i = 0; i < 10; ++i) {
+//        int y = 0;
+//        y += 1;
+//        std::cout << y;
+//    }
+//
+//
+//    if(1){
+//        int global = 0;
+//    }
+//    int global = 2;
+//    std::cout << global;
+//
 
 
 }
