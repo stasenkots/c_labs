@@ -1,28 +1,37 @@
-///Написать программу для возведения числа в степень
+//
+// Created by kotozavrina on 30/10/2021.
+//
 
 #include "iostream"
+#include "cstdlib"
+#include "time.h"
+
+///Написать программу, которая генерирует последовательность из 10 случайных чисел (в диапазоне от 1 до 10).
+///Выводит эти числа на экран и вычисляет их среднее арифметическое.
+///Рекомендуемый вид экрана приведен ниже. Для генерации случайных чисел от 1 до 10
+///использовать оператор rand() % 10 + 1, (функция rand() из библиотеки cstdlib).
+
 
 int main() {
+    int randNum;
+    int amount = 10;
+    int startInterval = 1;
+    int endInterval = 100;
+    double sum = 0;
+    double average;
 
-    int a;
-    int b;
+    srand(time(NULL));
 
-    std::cout << "Enter the number: ";
-    std::cin >> a;
+    std::cout << "Случайные числа" << std::endl;
 
-    std::cout << "Enter degree:";
-    std::cin >> b;
-
-    b -= 1;
-    while (b != 0) {
-        b--;
-        a *= a;
-
+    for (int counter = 1; counter < amount; counter++)
+    {
+        randNum = rand() % endInterval + startInterval;
+        std::cout << randNum << std::endl;
+        sum += randNum;
     }
-    std::cout << a;
+
+    average = sum / amount;
+    std::cout << "Среднее арифметическое равно: " << average;
     return 0;
 }
-
-//
-// Created by kotozavrina on 19/10/2021.
-//

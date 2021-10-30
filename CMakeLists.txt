@@ -3,6 +3,6 @@ project(c_labs)
 
 set(CMAKE_CXX_STANDARD 98)
 
-#add_executable(clabs cycles/task2.cpp)
-add_executable(c_labs cycles/task2.cpp)
+add_executable(clabs cycles/task3.cpp)
+#add_executable(c_labs cycles/task2.cpp)
 
