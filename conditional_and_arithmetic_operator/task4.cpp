@@ -21,8 +21,38 @@
 /// когда поезд стоит на платформе.(a,b,n,m задаются пользователем)
 
 
+//n = 3;
+//time_a_min = (n + 1) * a + n;
+//time_a = (n - 1) * a + n;
+
+
+
+
 #include <iostream>
 
 int main() {
+    int a;
+    int b;
+    int n;
+    int m;
 
+    std::cin >> a >> b >> n >> m;
+
+    int minTimeA = (n - 1) * a + n;
+    int maxTimeA = (n + 1) * a + n;
+    int minTimeB = (m - 1) * b + m;
+    int maxTimeB = (m + 1) * b + m;
+
+
+    int minTime = (minTimeA > minTimeB) ? minTimeA : minTimeB;
+    int maxTime = (maxTimeA > maxTimeB) ? maxTimeB : maxTimeA;
+
+    if (minTime > maxTime)
+    {
+        std::cout << -1;
+        return 0;
+    }
+
+
+    std::cout << minTime << " " << maxTime;
 }
